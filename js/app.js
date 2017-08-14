@@ -7,11 +7,13 @@ var scrollReveal = function () {
     $(document).scroll(function () {
         var y = $(this).scrollTop();
         if (y > 820) {
+            $('.skill-icon').fadeOut();
+             $('.habilidades').fadeIn();
             $('.skills').fadeIn();
-            $('.skills-intro').fadeOut()
         } else {
             $('.skills').fadeOut();
-            $('.skills-intro').fadeIn()
+            $('.habilidades').fadeOut();
+            $('.skill-icon').fadeIn()
         }
     });
 }

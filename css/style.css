@@ -10,25 +10,54 @@ header {
   background-position: center; }
   header #btn-contacto-nav {
     margin-right: 10vw;
-    margin-top: 7.5vh; }
+    margin-top: 17.5vh; }
+  header #logo {
+    margin-top: 7.5vh;
+    margin-left: 10vw; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align: center; }
 
 #nav-home {
   position: absolute;
-  margin-top: -10vh; }
+  margin-top: -15vh;
+  mask-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 25%, #ffffff 75%, rgba(255, 255, 255, 0) 100%); }
+  #nav-home ul {
+    text-align: center;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6); }
+    #nav-home ul li {
+      display: inline-block; }
+      #nav-home ul li a {
+        text-transform: uppercase;
+        text-decoration: none;
+        display: block; }
+        #nav-home ul li a a:hover {
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+          background: rgba(255, 255, 255, 0.1);
+          color: #f8bbd0; }
+
+#more-info {
+  position: absolute;
+  margin-top: -10vh;
+  margin-left: 43vw;
+  color: #f8bbd0; }
 
 .devicon {
-  font-size: 4.5em;
-  color: #000;
-  padding: 5vh; }
+  font-size: 3.5em;
+  color: #000; }
 
 .skills {
-  margin-top: 7.5vh;
-  display: none;
   align-items: center;
-  padding: 5vw; }
+  padding: 2.1vw; }
   .skills progress {
     background-color: #fff;
-    width: 100%;
+    width: 90%;
     height: .5em; }
     .skills progress[value]::-webkit-progress-bar {
       background-color: #eee;
@@ -36,5 +65,14 @@ header {
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset; }
     .skills progress[value]::-webkit-progress-value {
       background-color: #000; }
+  .skills .f-js {
+    border-right: solid #000;
+    border-bottom: solid #000; }
+  .skills .f-css {
+    border-left: solid #000;
+    border-top: solid #000; }
+
+.skills-title {
+  border: #000 solid; }
 
 /*# sourceMappingURL=style.css.map */
