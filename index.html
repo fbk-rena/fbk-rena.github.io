@@ -14,16 +14,16 @@
 
 <body>
     <header>
-        <img class="responsive-img circle" src="" alt="Logo">
+        <img id="logo" class="responsive-img hide-on-med-and-down" src="assets/Logo.png" alt="Logo">
         <a id="btn-contacto-nav" class="btn waves-effect waves-light btn-large right pink lighten-4" href="#contact">Contactame!!</a>
     </header>
     <nav id="nav-home" class="transparent">
         <ul class="hide-on-med-and-down left">
-            <li><a href="#karla">Inicio </a></li>
+            <li><a href="#karla">Acerca de mí </a></li>
         </ul>
         <ul class="hide-on-med-and-down right">
-            <li><a class="active" href="#proyectos">Mis Proyectos </a></li>
-            <li><a href="#karla">Acerca de mí</a></li>
+            <li><a href="#skills">Habilidades </a></li>
+            <li><a href="#karla">Algunos proyectos</a></li>
         </ul>
         <ul class="side-nav" id="mobile-demo">
             <li>
@@ -45,8 +45,9 @@
             <li><a class="" href="#proyectos">Mis Proyectos</a></li>
             <li><a class="" href="">Contactame</a></li>
         </ul>
-        <!--<a id="nav-logo" href="#karla" class="brand-logo center">Karla Lorena</a>-->
+        <a id="nav-logo" href="#karla" class="brand-logo center"><img src="assets/kl-white.png" alt=""></a>
     </nav>
+    <a id="more-info" href="#karla"><i class="center large material-icons">expand_more</i></a>
     <main>
         <section id="karla" class="container center">
             <div id="bio" class="row">
@@ -54,176 +55,289 @@
                 </div>
                 <div>
                     <p class="flow-text">
-                        Desarrolladora Front-End... <br> Es asombroso como en este conjunto de palabras, muchas constantes de mi vida encontraron un punto de convergencia ideal. Laboratoria la oportunidad y mi desempeño durante esta primer etapa, la herramienta para lograr exponenciar mis habilidades, capacidades, pasiones e intereses.
+                        Desarrolladora Front-End... <br> Es asombroso como en este conjunto de palabras, muchas constantes de mi vida encontraron un punto de convergencia ideal. <br> Laboratoria la oportunidad y mi desempeño durante esta primer etapa, la herramienta para lograr exponenciar mis habilidades, capacidades, pasiones e intereses.
                     </p>
                 </div>
             </div>
-            <!--<a id="btn-rena" href="assets/pdf/cv.pdf" class="waves-effect waves-light btn black" target="_blank">Un poco mas de mi</a>-->
-            <a id="btn-rena" href="assets/pdf/cv.pdf" class="waves-effect waves-light btn black" target="_blank">Descarga mi CV</a>
+            <!--<a id="btn-rena" href="assets/pdf/cv.pdf" class="waves-effect waves-light btn black hoverable" target="_blank">Un poco mas de mi</a>-->
+            <a id="btn-rena" href="assets/pdf/cv.pdf" class="waves-effect waves-light btn black hoverable" target="_blank">Descarga mi CV</a>
         </section>
         <section class="skills-intro container pink lighten-4 center">
             <div class="row">
-                <h3 id="skills-h">Habilidades</h3>
+                <h3 id="skills-h" class="skill-icon">Habilidades</h3>
             </div>
             <div id="skills-cont" class="row center">
                 <div class="col s4 skill-icon">
                     <a><img class="responsive-img circle" src="assets/badges/web-dev-icon.png"></a>
                 </div>
-                <div class="col s4 skill-icon skill-icon">
+                <div class="col s4 skill-icon">
                     <a><img class="responsive-img" src="assets/badges/Inclusivity_noun_23949_XOXO.png"></a>
                 </div>
-                <div class="col s4 skill-iconskill-icon">
-                    <a><img class="responsive-img circle" src="assets/badges/ux-image.png"></a>
+                <div class="col s4 skill-icon">
+                    <a><img class="responsive-img " src="assets/badges/User_Experience_Design-256.png"></a>
                 </div>
             </div>
-        </section>
-        <section id="skills" class="skills pink lighten-4 container black-text center">
-            <section class="row">
-                <section class="container pink lighten-4 center">
-                    <div class="row center">
-                        <div class="col s4 skill-icon skill-icon " href="#">
-                            <a><img class="responsive-img" src="assets/badges/web-dev-icon.png"></a>
-                        </div>
-                        <div class="col s8">
-                            <h3>Habilidades técnicas</h3>
-                        </div>
-                    </div>
-                </section>
-                <div class="row triada">
-                    <div class="col s4 center">
-                        <i class="devicon devicon-javascript-plain"></i>
-                        <br>
-                        <progress value="77" max="100"></progress>
-                        <p>Intermedio</p>
-                    </div>
-                    <div class="col s4 center">
-                        <i class="devicon devicon-html5-plain-wordmark"></i>
-                        <br>
-                        <progress value="80" max="100"></progress>
-                        <p>Intermedio</p>
-                    </div>
-                    <div class="col s4 center">
-                        <i class="devicon devicon-css3-plain-wordmark"></i>
-                        <br>
-                        <progress value="80" max="100"></progress>
-                        <p>Intermedio</p>
-                    </div>
+            <div class="skills skills-title row pink lighten-4">
+                <div class="col m4 offset-s3 s5">
+                    <a><img class="responsive-img" src="assets/badges/web-dev-icon.png"></a>
                 </div>
-                <section class="col s6">
+                <div class="col m8 s12 center-align valign-wrapper">
+                    <h3 class="center-align">Habilidades técnicas</h3>
+                </div>
+            </div>
+            <div class="skills row triada flow-text">
+                <div class="col offset-m3 m2 s4">
+                    <i class="devicon devicon-html5-plain-wordmark"></i>
+                    <br>
+                    <progress value="80" max="100"></progress>
+                    <p>Profesional</p>
+                </div>
+                <div class="col m2 s4">
+                    <i class="devicon devicon-css3-plain-wordmark"></i>
+                    <br>
+                    <progress value="80" max="100"></progress>
+                    <p>Profesional</p>
+                </div>
+                <div class="col m2 s4">
+                    <i class="devicon devicon-javascript-plain"></i>
+                    <br>
+                    <progress value="87" max="100"></progress>
+                    <p>Profesional</p>
+                </div>
+            </div>
+            <div class="row skills center flow-text">
+                <div class="center flow-text">
+                    <h4>Control de versiones</h4>
+                </div>
+                <div>
                     <div class="row">
-                        <h4>Frameworks & Librerias</h4>
-                    </div>
-                    <div class="row">
-                        <h5>Css</h5>
-                        <div class="row">
-                            <i class="devicon devicon-bootstrap-plain"></i>
-                            <i class="devicon devicon-foundation-plain-wordmark"></i>
+                        <div class="col offset-m4 m2 offset-s2 s4">
+                            <i class="devicon devicon-git-plain"></i>
+                            <progress value="89" max="100"></progress>
+                            <p>Profesional</p>
                         </div>
-                    </div>
-                    <div class="row">
-                        <h5>JavaScript</h5>
-                        <div class="row">
-                            <i class="devicon devicon-jquery-plain-wordmark"></i>
-                            <i class="devicon devicon-nodejs-plain-wordmark"></i>
-                            <i class="devicon devicon-mocha-plain"></i>
-                            <i class="devicon devicon-express-original"></i>
-                            <i class="devicon devicon-react-original-wordmark"></i>
-                            <i class="devicon devicon-angularjs-plain"></i>
-                        </div>
-                    </div>
-                </section>
-                <section class="col s6">
-                    <div class="row">
-                        <h4>Control de versiones</h4>
-                    </div>
-                    <div>
-                        <div class="row">
-                            <i class="devicon devicon-git-plain-wordmark"></i>
+                        <div class="col m2 s4">
                             <i class="devicon devicon-github-plain"></i>
+                            <progress value="93" max="100"></progress>
+                            <p>Profesional</p>
                         </div>
                     </div>
-                    <div class="row">
-                        <h4>Herramientas de desarrollo</h4>
+                </div>
+            </div>
+            <section class="skills row ">
+                <h4>Frameworks & Librerias</h4>
+                <div class="row pink lighten-4">
+                    <div class="col m6 s12 f-js ">
+                        <div class="row">
+                            <h5>JavaScript</h5>
+                        </div>
+                        <div class="row">
+                            <div class="col m4 s4">
+                                <i class="devicon devicon-express-original"></i>
+                                <progress value="47" max="100"></progress>
+                                <p>Usuario Avanzado</p>
+                            </div>
+                            <div class="col m4 s4">
+                                <i class="devicon devicon-jquery-plain"></i>
+                                <progress value="69" max="100"></progress>
+                                <p>Profesional</p>
+                            </div>
+                            <div class="col m4 s4">
+                                <i class="devicon devicon-mocha-plain"></i>
+                                <progress value="37" max="100"></progress>
+                                <p>Usuario</p>
+                            </div>
+                            <div class="col m4 s4">
+                                <i class="devicon devicon-nodejs-plain"></i>
+                                <progress value="59" max="100"></progress>
+                                <p>Usuario Avanzado</p>
+                            </div>
+                            <div class="col m4 s4">
+                                <i class="devicon devicon-react-original"></i>
+                                <progress value="59" max="100"></progress>
+                                <p>Usuario Avanzado</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="row">
-                        <i class="devicon devicon-gulp-plain"></i>
-                        <i class="devicon devicon-sass-original"></i>
-                        <i class="devicon devicon-babel-plain"></i>
-                    </div>
-                </section>
-            </section>
-            <hr>
-            <section class="container pink lighten-4 center">
-                <div class="row center">
-                    <div class="col s4 skill-icon skill-icon " href="#">
-                        <a><img class="responsive-img" src="assets/badges/Inclusivity_noun_23949_XOXO.png"></a>
-                    </div>
-                    <div class="col s8">
-                        <h2>Habilidades profesionales</h2>
+                    <div class="col m6 s12 f-css">
+                        <div class="row">
+                            <h5>Css</h5>
+                        </div>
+                        <div class="row">
+                            <div class="col m4 s4">
+                                <i class="devicon devicon-bootstrap-plain"></i>
+                                <progress value="77" max="100"></progress>
+                                <p>Profesional</p>
+                            </div>
+                            <div class="col m4 s4">
+                                <i class="devicon devicon-foundation-plain"></i>
+                                <progress value="37" max="100"></progress>
+                                <p>Usuario</p>
+                            </div>
+                            <div class="col m4 s4">
+                                <img class="responsive-img" src="assets/badges/materializecss-bw.png" alt="">
+                                <progress value="85" max="100"></progress>
+                                <p>Profesional</p>
+                            </div>
+                            <div class="col m4 s4">
+                                <img class="responsive-img" src="assets/badges/uikit.png" alt="">
+                                <progress value="47" max="100"></progress>
+                                <p>Usuario Avanzado</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
-            <section class="row skills">
-                <section class="col s6">
+            <section class="skills row">
+                <div class="col m8 s12">
+                    <h4>Herramientas de desarrollo</h4>
+                    <div class="row">
+                        <div class="col m3 s4">
+                            <i class="devicon devicon-gulp-plain"></i>
+                            <progress value="57" max="100"></progress>
+                            <p>Usuario Avanzado</p>
+                        </div>
+                        <div class="col m3 s4">
+                            <i class="devicon devicon-sass-original"></i>
+                            <progress value="75" max="100"></progress>
+                            <p>Profesional</p>
+                        </div>
+                        <div class="col m3 s4">
+                            <i class="devicon devicon-babel-plain"></i>
+                            <progress value="47" max="100"></progress>
+                            <p>Usuario Avanzado</p>
+                        </div>
+                    </div>
+                </div>
+                <section class=" skills col m4 offset-s1 s10">
+                    <h4>Diseño Responsivo</h4>
+                    <img class="responsive-img" src="assets/badges/responsivet.png" alt="">
+                </section>
+                <section class="skills col m4 offset-s1 s10">
+                    <h4>Consumo de API`s</h4>
+                    <img class="responsive-img" src="assets/badges/api.png" alt="">
+                </section>
+                <section class="skills col m8 s12">
+                    <div class="row">
+                        <h4>IDE</h4>
+                    </div>
+                    <div class="row">
+                        <div class="col m3 s4">
+                            <i class="devicon devicon-atom-original"></i>
+                            <progress value="75" max="100"></progress>
+                            <p>Profesional</p>
+                        </div>
+                        <div class="col m3 s4">
+                            <img src="assets/badges/brackets.png" alt="">
+                            <progress value="89" max="100"></progress>
+                            <p>Profesional</p>
+                        </div>
+                        <div class="col m3 s4">
+                            <img src="assets/badges/codepen.png" alt="">
+                            <progress value="75" max="100"></progress>
+                            <p>Profesional</p>
+                        </div>
+                        <div class="col m3 s4">
+                            <img src="assets/badges/sublime.png" alt="">
+                            <progress value="70" max="100"></progress>
+                            <p>Profesional</p>
+                        </div>
+                        <div class="col m3 s4">
+                            <i class="devicon devicon-visualstudio-plain"></i>
+                            <progress value="80" max="100"></progress>
+                            <p>Profesional</p>
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <div class="skills skills-title row pink lighten-4">
+                <div class="col m4 offset-s3 s5">
+                    <img class="responsive-img" src="assets/badges/Inclusivity_noun_23949_XOXO.png">
+                </div>
+                <div class="col m8 s12 center-align valign-wrapper">
+                    <h3 class="center-align">Habilidades profesionales</h3>
+                </div>
+            </div>
+            <section class="skills row">
+                <section class="col m6 s12">
                     <h4>Metodología Agile</h4>
                     <img class="responsive-img" src="assets/badges/agile.png" alt="agile">
                 </section>
-                <section class="col s6">
+                <section class="col m6 s12">
                     <div class="row">
                         <h4>Herramientas de productividad</h4>
                     </div>
                     <div class="row">
-                        <i class="devicon devicon-trello-plain"></i>
-                        <i class="devicon devicon-slack-plain"></i>
+                        <div class="col offset-m3 m3 s6">
+                            <i class="devicon devicon-trello-plain"></i>
+                            <br>
+                            <progress value="75" max="100"></progress>
+                            <p>Profesional</p>
+                        </div>
+                        <div class="col m3 s6">
+                            <i class="devicon devicon-slack-plain"></i>
+                            <br>
+                            <progress value="75" max="100"></progress>
+                            <p>Profesional</p>
+                        </div>
                     </div>
                     <div class="row">
                         <h4>Herramientas de diseño</h4>
                     </div>
                     <div class="row">
-                        <i class="devicon devicon-illustrator-line"></i>
-                        <i class="devicon devicon-photoshop-line"></i>
+                        <div class="col offset-m3 m3 s6">
+                            <i class="devicon devicon-illustrator-line"></i>
+                            <br>
+                            <progress value="63" max="100"></progress>
+                            <p>Usuario Avanzado</p>
+                        </div>
+                        <div class="col m3 s6">
+                            <i class="devicon devicon-photoshop-line"></i>
+                            <br>
+                            <progress value="79" max="100"></progress>
+                            <p>Profesional</p>
+                        </div>
                     </div>
                 </section>
             </section>
-            <hr>
-            <section class="container pink lighten-4 center">
-                <div class="row skills">
-                    <div class="col s4 skill-icon skill-icon " href="#">
-                        <a><img class="responsive-img" src="assets/badges/ux-image.png"></a>
-                    </div>
-                    <div class="col s8">
-                        <h2>Intereses y participaciones</h2>
-                    </div>
+            <div class="skills skills-title row pink lighten-4">
+                <div class="col m4 offset-s3 s5">
+                    <img class="responsive-img" src="assets/badges/User_Experience_Design-256.png">
                 </div>
-            </section>
-            <section class="row skills">
-                <section class="col s8">
+                <div class="col m8 s12 center-align valign-wrapper">
+                    <h3 class="center-align">Intereses y participaciones</h3>
+                </div>
+            </div>
+            <section class="row skills flow-text">
+                <section class="col m4 push-m8 s5 push-s7">
+                    <img class="responsive-img" src="assets/badges/ux-image.png">
+                </section>
+                <section class="col m8 pull-m4 s7 pull-s5">
                     <ul>
-                        <li> ❤ Taller <em>"INTRODUCCIÓN A UX"</em> Laboratoria, Mayo 2017</li>
-                        <li> ❤ Taller <em>"CANVAS UX"</em> Google, WITH TECH, Marzo 2017</li>
-                        <li> ❤ Curso <em>"ABC PARA LA CREACIÓN DE PROYECTOS"</em> CNA (Online), Marzo 2016</li>
+                        <br>
+                        <li>❤ Taller <em>"INTRODUCCIÓN A UX"</em> Laboratoria, Mayo 2017</li>
+                        <br>
+                        <li>❤ Taller <em>"CANVAS UX"</em> Google, WITH TECH, Marzo 2017</li>
+                        <br>
+                        <li>❤ Curso <em>"ABC PARA LA CREACIÓN DE PROYECTOS"</em> <br> CNA (Online), Marzo 2016</li>
                     </ul>
                 </section>
+            </section>
+            <section class="row skills">
                 <section class="col s4">
                     <img class="responsive-img" src="assets/badges/design-icon.png">
                 </section>
-            </section>
-            <section class="row skills">
-                <section class="col s4">
-                    <img class="responsive-img" src="assets/badges/User_Experience_Design-256.png">
-                </section>
                 <section class="col s8">
                     <div class="row">
-                        <div class="col s6">
-                            <img class="responsive-img" src="assets/badges/FOTO-WEB-ALWAYS-2-.png" alt="#comonina">
-                            <p>
-                                Proyecto:
-                                <strong>Fierce Girls</strong>
-                            </p>
+                        <div class="row">
+                            <div class="col m6 s12">
+                                <img class="responsive-img" src="assets/badges/Recurso-2LogoTalentHackathonLanding.png" alt="">
+                            </div>
+                            <div class="col m6 s12">
+                                <img class="responsive-img" src="assets/badges/campus.png" alt="">
+                            </div>
                         </div>
-                        <div class="col s6">
-                            <img class="responsive-img" src="assets/badges/Recurso-2LogoTalentHackathonLanding.png" alt="">
-                            <img class="responsive-img" src="assets/badges/campus.png" alt="">
+                        <div class="row center flow-text">
                             <p>
                                 Proyecto:
                                 <strong>Edufin</strong>
@@ -232,7 +346,17 @@
                                 <em>Finalista Vertical: Inclusión financiera</em>
                             </p>
                         </div>
-                        <div class="col s6">
+                    </div>
+                    <div class="row">
+                        <div class="col s6 flow-text">
+                            <img class="responsive-img" src="assets/badges/FOTO-WEB-ALWAYS-2-.png" alt="#comonina">
+                            <p>
+                                Proyecto:
+                                <strong>Fierce Girls</strong>
+                            </p>
+                        </div>
+
+                        <div class="col s6 flow-text">
                             <img class="responsive-img" src="assets/badges/mamadigital.png" alt="">
                             <p>
                                 Proyecto:
@@ -244,33 +368,48 @@
             </section>
         </section>
         <section id="proyectos" class="container">
-            <h3 id="proyectos-landing" class="center">Mis proyectos</h3>
+            <h3 class="center">Mis proyectos</h3>
+            <h4 id="proyectos-landing" class="center"> Proyectos Web</h4>
             <section class="row">
                 <div class="col s12 m6">
-                    <div class="card">
+                    <div class="card hoverable">
                         <div class="card-image">
-                            <img src="assets/proyectos/lap-eva.jpg">
+                            <img src="assets/proyectos/eva-cover.jpg">
                             <a class="btn-floating halfway-fab waves-effect waves-light pink lighten-3" href="views/proyectos.html#carousel-eva"><i class="material-icons">add</i></a>
                         </div>
                         <div class="card-content">
                             <h4 class="pink-text text-lighten-3">Eva Health Bot</h4>
                             <p>Sitio Web del proyecto Eva desarrollado durante el hackaton #mamadigital</p>
-                            <p><a class="pink-text text-lighten-3" href="https://github.com/fbk-rena/evahealth.git">Repositorio</a></p>
-                            <p><a class="pink-text text-lighten-3" href="https://fbk-rena.github.io/evahealth/.">Demo</a></p>
+                            <a class="btn pink lighten-3" href="https://github.com/fbk-rena/evahealth.git">Repositorio</a>
+                            <a class="btn pink lighten-3" href="https://fbk-rena.github.io/evahealth/.">Demo</a>
                         </div>
                     </div>
                 </div>
                 <div class="col s12 m6">
-                    <div class="card">
+                    <div class="card hoverable">
                         <div class="card-image">
-                            <img src="assets/proyectos/yape-mockup.png">
+                            <img src="assets/proyectos/yape-index.jpg">
                             <a class="btn-floating halfway-fab waves-effect waves-light pink lighten-3" href="views/proyectos.html#carousel-yape"><i class="material-icons">add</i></a>
                         </div>
                         <div class="card-content">
                             <h4 class="pink-text text-lighten-3">Yape</h4>
                             <p>Web app, examen proyecto final Sprint 6, consumo de APIs, validaciones y manejo de automatizadores</p>
-                            <p><a class="pink-text text-lighten-3" href="https://github.com/fbk-rena/yape.git">Repositorio</a></p>
-                            <p><a class="pink-text text-lighten-3" href="https://fbk-rena.github.io/yape/">Demo</a></p>
+                            <p><a class="btn pink lighten-3" href="https://github.com/fbk-rena/yape.git">Repositorio</a></p>
+                            <p><a class="btn pink lighten-3" href="https://fbk-rena.github.io/yape/">Demo</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6">
+                    <div class="card hoverable">
+                        <div class="card-image">
+                            <img src="assets/proyectos/encontrarte-cover-notags.jpg">
+                            <a class="btn-floating halfway-fab waves-effect waves-light pink lighten-3" href="views/encontrarte.html"><i class="material-icons">add</i></a>
+                        </div>
+                        <div class="card-content">
+                            <h4 class="pink-text text-lighten-3">Encontrarte</h4>
+                            <p>Web app con Landing page para desktop realizada durante un pequeño hackaton interno, trabajo colaborativo donde yo lleve el master del proyecto, incluye consumo de Api Google maps</p>
+                            <a class="btn pink lighten-3" href="https://github.com/fbk-rena/encontrArte">Repositorio</a>
+                            <a class="btn pink lighten-3" href="https://fbk-rena.github.io/encontrArte/">Demo</a>
                         </div>
                     </div>
                 </div>
@@ -283,7 +422,7 @@
                 <div class="col l6 s12">
                     <h5 class="white-text">Karla Lorena</h5>
                     <ul>
-                       <!--<li><a class="grey-text text-lighten-3" href="#!"> Un poco mas de mi</a></li>-->
+                        <!--<li><a class="grey-text text-lighten-3" href="#!"> Un poco mas de mi</a></li>-->
                         <li><a class="grey-text text-lighten-3" href="#!"> Mi CV</a></li>
                         <li><a class="grey-text text-lighten-3" href="#!"> Mis Proyectos</a></li>
                         <li><a class="grey-text text-lighten-3" href="#skills"> Mis Habilidades</a></li>
@@ -312,7 +451,6 @@
         <div class="footer-copyright">
             <div class="container center">
                 Rena ❤ © 2017 Copyright Text
-                <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
             </div>
         </div>
     </footer>
@@ -320,7 +458,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
     <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
-    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
 </body>
 
