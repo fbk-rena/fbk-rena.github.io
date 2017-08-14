@@ -9,29 +9,67 @@ header {
     background-image: url(../assets/mikayla-mallek-219946.jpg);
     background-size: cover;
     background-position: center;
-    #btn-contacto-nav{
+    #btn-contacto-nav {
         margin-right: 10vw;
+        margin-top: 17.5vh;
+    }
+    #logo {
         margin-top: 7.5vh;
+        margin-left: 10vw;
     }
 }
-#nav-home{
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-align: center;
+}
+
+#nav-home {
+    position: absolute;
+    margin-top: -15vh;
+    mask-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 25%, #ffffff 75%, rgba(255, 255, 255, 0) 100%);
+    ul {
+        text-align: center;
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
+        box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+        li {
+            display: inline-block;
+            a {
+                text-transform: uppercase;
+                text-decoration: none;
+                display: block;
+                a:hover {
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+                    background: rgba(255, 255, 255, 0.1);
+                    color: #f8bbd0;
+                }
+            }
+        }
+    }
+}
+
+#more-info {
     position: absolute;
     margin-top: -10vh;
-    
+    margin-left: 43vw;
+    color: #f8bbd0;
 }
+
 .devicon {
-        font-size: 4.5em;
-        color: #000;
-        padding: 5vh;
-    }
+    font-size: 3.5em;
+    color: #000;
+}
+
 .skills {
-    margin-top: 7.5vh;
-    display: none;
     align-items: center;
-    padding: 5vw;
+    padding: 2.1vw;
     progress {
         background-color: #fff;
-        width: 100%;
+        width: 90%;
         height: .5em;
         &[value]::-webkit-progress-bar {
             background-color: #eee;
@@ -42,6 +80,16 @@ header {
             background-color: #000;
         }
     }
+    .f-js {
+        border-right: solid #000;
+        border-bottom: solid #000;
+    }
+    .f-css {
+        border-left: solid #000;
+        border-top: solid #000;
+    }
 }
 
-//bars
+.skills-title{
+    border: #000 solid;
+}
