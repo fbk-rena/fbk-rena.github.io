@@ -1,8 +1,8 @@
 var cargarPagina = function () {
     scrollReveal();
-    $('.carousel').carousel();
     desplazamientoSuave();
-    $(".encontrarte-smoove").smoove({offset:'40%'})
+     $(".button-collapse").sideNav();
+    $(".smoove").smoove({offset:'40%'});
 }
 var scrollReveal = function () {
     $(document).scroll(function () {
