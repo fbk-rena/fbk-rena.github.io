@@ -15,7 +15,7 @@
 <body>
     <header>
         <img id="logo" class="responsive-img hide-on-med-and-down" src="assets/Logo.png" alt="Logo">
-        <a id="btn-contacto-nav" class="btn waves-effect waves-light btn-large right pink lighten-4" href="#contact">Contactame!!</a>
+        <a id="btn-contacto-nav" class="btn waves-effect waves-light btn-large right pink lighten-4" href="javascript:void( window.open( 'https://form.jotform.co/72255300397858', 'blank', 'scrollbars=yes, toolbar=no, width=700, height=500' ) ) ">Contactame!!</a>
     </header>
     <nav id="nav-home" class="transparent">
         <ul class="hide-on-med-and-down left">
@@ -62,7 +62,7 @@
             <!--<a id="btn-rena" href="assets/pdf/cv.pdf" class="waves-effect waves-light btn black hoverable" target="_blank">Un poco mas de mi</a>-->
             <a id="btn-rena" href="assets/pdf/cv.pdf" class="waves-effect waves-light btn black hoverable" target="_blank">Descarga mi CV</a>
         </section>
-        <section class="skills-intro container pink lighten-4 center">
+        <section id="skills" class="skills-intro container pink lighten-4 center">
             <div class="row">
                 <h3 id="skills-h" class="skill-icon">Habilidades</h3>
             </div>
@@ -388,24 +388,6 @@
                 <div class="col s12 m6">
                     <div class="card hoverable">
                         <div class="card-image">
-                            <img src="assets/proyectos/yape-index.jpg">
-                            <a class="btn-floating halfway-fab waves-effect waves-light pink lighten-3" href="views/proyectos.html#carousel-yape"><i class="material-icons">add</i></a>
-                        </div>
-                        <div class="card-content">
-                            <h4 class="pink-text text-lighten-3">Yape</h4>
-                            <p>Web app, examen proyecto final Sprint 6, consumo de APIs, validaciones y manejo de automatizadores</p>
-                            <p><a class="btn pink lighten-3" href="https://github.com/fbk-rena/yape.git">Repositorio</a></p>
-                            <p><a class="btn pink lighten-3" href="https://fbk-rena.github.io/yape/">Demo</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s12 m6">
-<<<<<<< HEAD
-                    <div class="card hoverable">
-=======
-                    <div class="card">
->>>>>>> d88ede0a30e8ec5b858068478ef3856319ced353
-                        <div class="card-image">
                             <img src="assets/proyectos/encontrarte-cover-notags.jpg">
                             <a class="btn-floating halfway-fab waves-effect waves-light pink lighten-3" href="views/encontrarte.html"><i class="material-icons">add</i></a>
                         </div>
@@ -417,50 +399,85 @@
                         </div>
                     </div>
                 </div>
+                <div class="col s12 m6">
+                    <div class="card hoverable">
+                        <div class="card-image">
+                            <img src="assets/proyectos/yape-index.jpg">
+                            <a class="btn-floating halfway-fab waves-effect waves-light pink lighten-3" href="views/proyectos.html#carousel-yape"><i class="material-icons">add</i></a>
+                        </div>
+                        <div class="card-content">
+                            <h4 class="pink-text text-lighten-3">Yape</h4>
+                            <p>Web app, examen proyecto final Sprint 6, consumo de APIs, validaciones y manejo de automatizadores</p>
+                            <p><a class="btn pink lighten-3" href="https://github.com/fbk-rena/yape.git">Repositorio</a></p>
+                            <p><a class="btn pink lighten-3" href="https://fbk-rena.github.io/yape/">Demo</a></p>
+                        </div>
+                    </div>
+                </div>
             </section>
+            <h4>Proyectos Artísticos</h4>
+            <div class="row">
+                <div class="smoove col m4 s6">
+                    <img class="responsive-img" src="assets/proyectos/textiles/lanzadera.jpg">
+                </div>
+                <div class="smoove col m4 s6" >
+                    <img class="responsive-img" src="assets/proyectos/textiles/modelado.jpg">
+                </div>
+                <div class="smoove col m4 s6" >
+                    <img class="responsive-img" src="assets/proyectos/textiles/circulos.jpg">
+                </div>
+                <div class="smoove col m4 s6" >
+                    <img class="responsive-img" src="assets/proyectos/textiles/rombos.jpg">
+                </div>
+                <div class="smoove col m4 s12" data-scale="5" >
+                    <img class="responsive-img" src="assets/proyectos/textiles/tapiz.jpg">
+                </div>
+                <div class="smoove col m4 s6" >
+                    <img class="responsive-img" src="assets/proyectos/textiles/gobelino.jpg">
+                </div>
+                <div class="smoove col m4 s6" >
+                    <img class="responsive-img" src="assets/proyectos/textiles/texturas.jpg">
+                </div>
+                <div class="smoove col m4 s6" >
+                    <img class="responsive-img" src="assets/proyectos/textiles/lampcat.jpg">
+                </div>
+                <div class="smoove col m4 s6" >
+                    <img class="responsive-img" src="assets/proyectos/textiles/cintura.jpg">
+                </div>
+            </div>
         </section>
     </main>
     <footer class="page-footer pink lighten-4">
-        <div class="container">
-            <div class="row">
-                <div class="col l6 s12">
-                    <h5 class="white-text">Karla Lorena</h5>
+        <div class="row">
+            <div class="col m6 s12">
+                <div class="col m2 s4">
+                    <img src="../assets/Logo.png" alt="" class="responsive-img">
+                </div>
+                <div class="col m3 s6">
                     <ul>
                         <!--<li><a class="grey-text text-lighten-3" href="#!"> Un poco mas de mi</a></li>-->
-                        <li><a class="grey-text text-lighten-3" href="#!"> Mi CV</a></li>
-                        <li><a class="grey-text text-lighten-3" href="#!"> Mis Proyectos</a></li>
-                        <li><a class="grey-text text-lighten-3" href="#skills"> Mis Habilidades</a></li>
+                        <li><a class="grey-text text-lighten-3" href="../assets/pdf/cv.pdf" target="_blank"> Mi CV</a></li>
+                        <li><a class="grey-text text-lighten-3" href="proyectos.html"> Mis Proyectos</a></li>
+                        <li><a class="grey-text text-lighten-3" href="../index.html#skills"> Mis Habilidades</a></li>
                     </ul>
                 </div>
-                <div class="col l4 offset-l2 s12">
-                    <h5 id="contact" class="white-text">Puedes encontrarme </h5>
-                    <ul>
-                        <li>
-                            <a class="grey-text text-lighten-3" href="tel:+5549350645"></a><i class="material-icons">phone_iphone</i> 55 4935 0645 </li>
-                        <li><a class="grey-text text-lighten-3" href="mailto:fbk.rena@gmail.com?Subject=subject message" target="_blank"><i class="material-icons">mail</i> fbk.rena@gmail.com </a></li>
-                        <li>
-                            <div class="divider"></div>
-                        </li>
-                        <li>
-                            <a class="grey-text text-lighten-3" href="#!">
-                                <h5>Visita mis redes</h5>
-                            </a>
-                        </li>
-                        <li><a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/rena-fbk/"><i class="material-icons">account_box</i>LinkedIn</a></li>
-                        <li><a class="grey-text text-lighten-3" href="https://github.com/fbk-rena"><i class="devicon-github-plain"></i> Visita mis repo</a></li>
-                    </ul>
-                </div>
+            </div>
+            <div class="col m6 s12">
+                <h6><a href="javascript:void( window.open( 'https://form.jotform.co/72255300397858', 'blank', 'scrollbars=yes, toolbar=no, width=700, height=500' ) )"> Contactame</a></h6>
+                <span><a class="grey-text text-lighten-3" href="tel:+5549350645"><i class="material-icons">phone_iphone</i> 55 4935 0645 </a></span>
+                <span><a class="grey-text text-lighten-3" href="mailto:fbk.rena@gmail.com" target="_blank"><i class="material-icons">mail</i> fbk.rena@gmail.com </a></span>
+                <span><a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/rena-fbk/"><i class="material-icons">account_box</i> LinkedIn</a></span>
+                <span><a class="grey-text text-lighten-3" href="https://github.com/fbk-rena"><i class="devicon-github-plain"></i> Visita mis repo</a></span>
             </div>
         </div>
         <div class="footer-copyright">
             <div class="container center">
-                Rena ❤ © 2017 Copyright Text
+                Rena ❤ © 2017 Copyright
             </div>
         </div>
     </footer>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smoove/0.2.6/jquery.smoove.min.js"></script>
     <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
     <script type="text/javascript" src="js/app.js"></script>
 </body>
